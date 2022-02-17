@@ -1,8 +1,6 @@
 # metatron-framework
 
-[![Build Status](https://travis-ci.org/apache/metron.svg?branch=master)](https://travis-ci.org/apache/metron)
-
-[![Build Status](https://app.travis-ci.com/metatroncyberwarfare/metatron-framework.svg?branch=main)](https://app.travis-ci.com/metatroncyberwarfare/metatron-framework)
+[![Build Status](https://travis-ci.org/apache/metron.svg?branch=master)](https://travis-ci.org/apache/metron) [![Build Status](https://app.travis-ci.com/metatroncyberwarfare/metatron-framework.svg?branch=main)](https://app.travis-ci.com/metatroncyberwarfare/metatron-framework)
 
 ![metatron](https://user-images.githubusercontent.com/98597119/154565609-62ad972a-881a-4887-a71f-5c8b311b4435.png)
 
