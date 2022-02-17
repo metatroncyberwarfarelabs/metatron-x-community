@@ -142,7 +142,7 @@ Some useful utilities that cross all of these parts of the architecture:
 
 * [Data management](https://github.com/metatroncyberwarfare/metatron-framework/tree/main/metatron-framework/metatron-platform/metatron-data-management) : A set of data management utilities aimed at getting data into HBase in a format which will allow data flowing through metatron to be enriched with the results.  Contains integrations with threat intelligence feeds exposed via TAXII as well as simple flat file structures.
 
-* [Profiler](https://github.com/metatroncyberwarfare/metatron-framework/tree/main/metron-analytics/metron-profiler-common) : A feature extraction mechanism that can generate a profile describing the behavior of an entity. An entity might be a server, user, subnet or application. Once a profile has been generated defining what normal behavior looks-like, models can be built that identify anomalous behavior.
+* [Profiler](https://github.com/metatroncyberwarfare/metatron-framework/tree/main/metatron-framework/metatron-analytics/metatron-profiler-common) : A feature extraction mechanism that can generate a profile describing the behavior of an entity. An entity might be a server, user, subnet or application. Once a profile has been generated defining what normal behavior looks-like, models can be built that identify anomalous behavior.
 
 # Notes on Adding a New Sensor
 
