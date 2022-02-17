@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/metatron.svg?branch=master)](https://travis-ci.org/metatron)
+
 # metatron-framework
 
 Metatron is a cyber warfare application framework that integrates a variety of open source big data technologies to provide a centralized tool for real-time cyber warfare threat intelligence. Metatron provides capabilities for log aggregation, full packet capture indexing, storage, advanced behavioral analytics and data enrichment, while applying
