@@ -65,7 +65,7 @@ Option 3 is more likely to have the latest code.
 
 # Getting Started
 
-To start exploring the capabilities of Metatron Cyberwarfare Labs [follow these instructions to launch Metatron in a single-node VM](https://github.com/metatroncyberwarfare/metatron-framework/tree/main/metatron-framework/metatron-deployment/development/centos6) on your own hardware.
+To start exploring the capabilities of Apache Metron [follow these instructions to launch Metatron in a single-node VM](https://github.com/metatroncyberwarfare/metatron-framework/tree/main/metatron-framework/metatron-deployment/development/centos6) on your own hardware.
 
 # Building metatron
 
@@ -87,7 +87,7 @@ $ mvn clean install -PHDP-2.5.0.0
 You can swap "install" for "package" in the commands above if you don't want to deploy the artifacts to your local .m2 repo.
 
 
-# Build Metatron Reporting
+# Build metatron Reporting
 
 To build and run reporting with code coverage:
 ```
