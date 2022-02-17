@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/metatron.svg?branch=master)](https://travis-ci.org/metatron)
+[![Build Status](https://travis-ci.org/apache/metron.svg?branch=master)](https://travis-ci.org/apache/metron)
 
 # metatron-framework
 
