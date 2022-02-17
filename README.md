@@ -1,6 +1,5 @@
 # metatron-framework
 
-[![Build Status](https://app.travis-ci.com/metatroncyberwarfare/metatron-framework.svg?branch=main)](https://app.travis-ci.com/metatroncyberwarfare/metatron-framework)
 ![license](https://img.shields.io/github/license/metatroncyberwarfare/metatron-framework?style=for-the-badge)
 
 [!metatron](https://user-images.githubusercontent.com/98597119/154565609-62ad972a-881a-4887-a71f-5c8b311b4435.png)
