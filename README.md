@@ -113,7 +113,7 @@ Some high level links to the relevant subparts of the architecture, for more inf
 
 Some useful utilities that cross all of these parts of the architecture:
 
-* [Stellar](https://github.com/metatroncyberwarfare/metatron-framework/tree/main/metron-platform/metron-common) : A custom data transformation language that is used throughout metatron from simple field transformation to expressing triage rules.
+* [Stellar](https://github.com/metatroncyberwarfare/metatron-framework/tree/main/metatron-framework/metatron-stellar/stellar-common) : A custom data transformation language that is used throughout metatron from simple field transformation to expressing triage rules.
 
 * [Model as a Service](https://github.com/metatroncyberwarfare/metatron-framework/tree/main/metron-analytics/metron-maas-service) : A Yarn application which can deploy machine learning and statistical models onto the cluster along with the associated Stellar functions to be able to call out to them in a scalable manner.
 
