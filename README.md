@@ -107,10 +107,7 @@ Some high level links to the relevant subparts of the architecture, for more inf
 
 * [Parsers](https://github.com/metatroncyberwarfare/metatron-framework/tree/main/metatron-framework/metatron-platform/metatron-parsing) : Parsing data from kafka into the metatron data model and passing it downstream to Enrichment.  
 
-https://github.com/metatroncyberwarfare/metatron-framework/tree/main/metatron-framework/metatron-deployment/development/centos6
-
-
-* [Enrichment](https://github.com/metatroncyberwarfare/metatron-framework/tree/main/metron-platform/metron-enrichment) : Enriching data post-parsing and providing the ability to tag a message as an alert and assign a risk triage level via a custom rule language.
+* [Enrichment](https://github.com/metatroncyberwarfare/metatron-framework/tree/main/metatron-framework/metatron-platform/metatron-parsing) : Enriching data post-parsing and providing the ability to tag a message as an alert and assign a risk triage level via a custom rule language.
 
 * [Indexing](https://github.com/metatroncyberwarfare/metatron-framework/tree/main/metron-platform/metron-indexing) : Indexing the data post-enrichment into HDFS, Elasticsearch or Solr.
 
