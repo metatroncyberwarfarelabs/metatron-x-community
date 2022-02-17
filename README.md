@@ -58,7 +58,7 @@ Option 3 is more likely to have the latest code.
 
 # Getting Started
 
-To start exploring the capabilities of Apache Metron [follow these instructions to launch Metron in a single-node VM](https://github.com/metatroncyberwarfare/metatron-framework/tree/main/metron-deployment/development/centos6) on your own hardware.
+To start exploring the capabilities of Apache Metron [follow these instructions to launch Metron in a single-node VM](https://github.com/metatroncyberwarfare/metatron-framework/tree/main/metatron-framework/metatron-deployment/development/centos6) on your own hardware.
 
 # Building metatron
 
@@ -97,7 +97,7 @@ The staged site is deployed to /tmp/metatron/site/index.html, and can be viewed 
 
 ## Building with Docker
 
-A Docker container with all the required software, with the proper versions, is available to be used as well. See [ansible-docker](https://github.com/metatroncyberwarfare/metatron-framework/tree/main/metron-deployment/packaging/docker/ansible-docker).
+A Docker container with all the required software, with the proper versions, is available to be used as well. See [ansible-docker](https://github.com/metatroncyberwarfare/metatron-framework/tree/main/metatron-framework/metatron-deployment/packaging/docker/ansible-docker).
 
 # Navigating the Architecture
 
@@ -105,7 +105,10 @@ metatron is at its core a Kappa architecture with Apache Storm as the processing
 
 Some high level links to the relevant subparts of the architecture, for more information:
 
-* [Parsers](https://github.com/metatroncyberwarfare/metatron-framework/tree/main/metron-platform/metron-parsing) : Parsing data from kafka into the metatron data model and passing it downstream to Enrichment.  
+* [Parsers](https://github.com/metatroncyberwarfare/metatron-framework/tree/main/metatron-framework/metatron-platform/metatron-parsing) : Parsing data from kafka into the metatron data model and passing it downstream to Enrichment.  
+
+https://github.com/metatroncyberwarfare/metatron-framework/tree/main/metatron-framework/metatron-deployment/development/centos6
+
 
 * [Enrichment](https://github.com/metatroncyberwarfare/metatron-framework/tree/main/metron-platform/metron-enrichment) : Enriching data post-parsing and providing the ability to tag a message as an alert and assign a risk triage level via a custom rule language.
 

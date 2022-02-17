@@ -36,7 +36,7 @@ Fastcapa leverages the Data Plane Development Kit ([DPDK](http://dpdk.org/)).  D
 Quick Start
 -----------
 
-The quickest way to see Fastcapa in action is to use a Virtualbox environment on your local machine.  The necessary files and instructions to do this are located at [`metron-deployment/vagrant/fastcapa-vagrant`](../../metron-deployment/vagrant/fastcapa-test-platform). All you need to do is execute the following.
+The quickest way to see Fastcapa in action is to use a Virtualbox environment on your local machine.  The necessary files and instructions to do this are located at [`metatron-deployment/vagrant/fastcapa-vagrant`](../../metatron-deployment/vagrant/fastcapa-test-platform). All you need to do is execute the following.
 ```
 cd metron-deployment/vagrant/fastcapa-test-platform
 vagrant up
@@ -60,7 +60,7 @@ The process of installing Fastcapa has a fair number of steps and involves build
 
 ### Automated Installation
 
-The best documentation is code that actually does this for you.  An Ansible role that performs the entire installation procedure can be found at [`metron-deployment/roles/fastcapa`](../../metron-deployment/roles/fastcapa).  Use this to install Fastcapa or as a guide for manual installation.  The automated installation assumes CentOS 7.1 and is directly tested against [bento/centos-7.1](https://atlas.hashicorp.com/bento/boxes/centos-7.1).
+The best documentation is code that actually does this for you.  An Ansible role that performs the entire installation procedure can be found at [`metron-deployment/roles/fastcapa`](../../metatron-deployment/roles/fastcapa).  Use this to install Fastcapa or as a guide for manual installation.  The automated installation assumes CentOS 7.1 and is directly tested against [bento/centos-7.1](https://atlas.hashicorp.com/bento/boxes/centos-7.1).
 
 ### Manual Installation
 

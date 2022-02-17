@@ -17,12 +17,12 @@
 #
 
 LOCATION_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
-#shellcheck source=./metron-committer-common
-source ${LOCATION_DIR}/metron-committer-common
+#shellcheck source=./metatron-committer-common
+source ${LOCATION_DIR}/metatron-committer-common
 
 init_configuration
 
-choose_metron_or_bro_repo
+choose_metatron_or_bro_repo
 
 init_committer_info
 

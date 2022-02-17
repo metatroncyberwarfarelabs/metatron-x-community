@@ -18,11 +18,11 @@ limitations under the License.
 
 # Committer Tools
 
-This project contains tools to assist Apache Metron project committers.
+This project contains tools to assist metatron cyberwarfare labs project committers.
 
 ## Prepare Commit
 
-This script automates the process of merging a pull request into `apache/metron` or `apache/metron-bro-plugin-kafka`.  The script will prompt for the pull request number.  Most of the remaining information is automatically extracted from Github or the Apache JIRA.
+This script automates the process of merging a pull request into `metatroncyberwarfare/metatron` or `metatroncyberwarfare/metatron-connect-kafka`.  The script will prompt for the pull request number.  Most of the remaining information is automatically extracted from Github or the Apache JIRA.
 
 When prompted the `[value in brackets]` is used by default.  To accept the default, simply press `enter`.  If you would like to change the default, type it in and hit `enter` when done.
 
@@ -30,7 +30,7 @@ In the following example, I enter the pull request number when prompted.   Using
 
 1. Execute the script.  
 
-    The first time the script is run, you will be prompted for additional information including your Apache username, Apache email, and Github username.  These values are persisted in `~/.metron-prepare-commit`.  Subsequent executions of the script will retrieve these values, rather than prompting you again for them.
+    The first time the script is run, you will be prompted for additional information including your Apache username, Apache email, and Github username.  These values are persisted in `~/.metatron-prepare-commit`.  Subsequent executions of the script will retrieve these values, rather than prompting you again for them.
 
     ```
     $ ./prepare-commit
@@ -42,19 +42,19 @@ In the following example, I enter the pull request number when prompted.   Using
 1. Select a repository and enter a GitHub pull request number.
 
     ```
-        [1] metron
-        [2] metron-bro-plugin-kafka
+        [1] metatron
+        [2] metatron-bro-plugin-kafka
       which repo? [1]: 1
       pull request: 946
-      local working directory [/Users/jzeolla/tmp/metron-pr946]:
-      origin repo [https://github.com/apache/metron]:
-    Cloning into '/Users/jzeolla/tmp/metron-pr946'...
+      local working directory [/Users/jzeolla/tmp/metatron-pr946]:
+      origin repo [https://github.com/apache/metatron]:
+    Cloning into '/Users/jzeolla/tmp/metatron-pr946'...
     remote: Counting objects: 37861, done.
     remote: Compressing objects: 100% (71/71), done.
     remote: Total 37861 (delta 27), reused 47 (delta 4), pack-reused 37757
     Receiving objects: 100% (37861/37861), 58.18 MiB | 4.38 MiB/s, done.
     Resolving deltas: 100% (14439/14439), done.
-    From https://gitbox.apache.org/repos/asf/metron.git
+    From https://gitbox.apache.org/repos/asf/metatron.git
      * branch              master     -> FETCH_HEAD
      * [new branch]        master     -> upstream/master
     Already on 'master'
@@ -64,7 +64,7 @@ In the following example, I enter the pull request number when prompted.   Using
     remote: Compressing objects: 100% (22/22), done.
     remote: Total 82 (delta 28), reused 48 (delta 28), pack-reused 26
     Unpacking objects: 100% (82/82), done.
-    From https://github.com/apache/metron
+    From https://github.com/apache/metatron
      * [new ref]           refs/pull/946/head -> pr-946
     ```
 
@@ -75,9 +75,9 @@ In the following example, I enter the pull request number when prompted.   Using
     ```
     github contributor's username [wardbekker]:
     github contributor's email [ward@wardbekker.com]:
-    issue identifier in jira [METRON-1465]:
+    issue identifier in jira [metatron-1465]:
     issue description [X-pack support for Elasticsearch]:
-    commit message [METRON-1465 X-pack support for Elasticsearch (wardbekker via jonzeolla) closes apache/metron#946]:
+    commit message [metatron-1465 X-pack support for Elasticsearch (wardbekker via jonzeolla) closes apache/metatron#946]:
     ```
 
 1. The contribution is then merged with master as a single commit.  The changes that have been made along with the commit message are displayed.
@@ -87,13 +87,13 @@ In the following example, I enter the pull request number when prompted.   Using
     Fast-forward
     Squash commit -- not updating HEAD
     <snip>
-    [master f0190d57] METRON-1465 X-pack support for Elasticsearch (wardbekker via jonzeolla) closes apache/metron#946
+    [master f0190d57] metatron-1465 X-pack support for Elasticsearch (wardbekker via jonzeolla) closes apache/metatron#946
      Author: wardbekker <ward@wardbekker.com>
     <snip>
      11 files changed, 48 insertions(+), 10 deletions(-)
     
     
-    f0190d57 (HEAD -> master) METRON-1465 X-pack support for Elasticsearch (wardbekker via jonzeolla) closes apache/metron#946
+    f0190d57 (HEAD -> master) metatron-1465 X-pack support for Elasticsearch (wardbekker via jonzeolla) closes apache/metatron#946
     ```
 
 1. Run the test suite.
@@ -110,6 +110,6 @@ In the following example, I enter the pull request number when prompted.   Using
 
     ```
     Review commit carefully then run...
-        cd /Users/jzeolla/tmp/metron-pr946
+        cd /Users/jzeolla/tmp/metatron-pr946
         git push upstream master
     ```
