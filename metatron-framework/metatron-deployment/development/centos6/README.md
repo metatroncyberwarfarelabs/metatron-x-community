@@ -50,7 +50,7 @@ Any platform that supports these tools is suitable, but the following instructio
 1. Deploy Metatron
 
     ```
-    cd metatron-deployment/development/centos6
+    cd metatron-deployment/development/centos
     vagrant up
     ```
 
