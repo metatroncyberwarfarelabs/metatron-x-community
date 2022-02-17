@@ -2,8 +2,6 @@
 
 ![license](https://img.shields.io/github/license/metatroncyberwarfare/metatron-framework?style=for-the-badge)
 
-[!metatron](https://user-images.githubusercontent.com/98597119/154565609-62ad972a-881a-4887-a71f-5c8b311b4435.png)
-
 Metatron is a cyber warfare application framework that integrates a variety of open source big data technologies to provide a centralized tool for real-time cyber warfare threat intelligence. Metatron provides capabilities for log aggregation, full packet capture indexing, storage, advanced behavioral analytics and data enrichment, while applying
 the most current threat intelligence information to security telemetry within a single platform.
 
