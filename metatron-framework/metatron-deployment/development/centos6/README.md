@@ -15,12 +15,12 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 -->
-Metron on CentOS 6
+Metatron on CentOS 6
 ==================
 
-This project fully automates the provisioning and deployment of Apache Metron and all necessary prerequisites on a single, virtualized host running CentOS 6.
+This project fully automates the provisioning and deployment of Metatron Labs and all necessary prerequisites on a single, virtualized host running CentOS 6.
 
-Metron is composed of many components and installing all of these on a single host, especially a virtualized one, will greatly stress the resources of the host.   The host will require at least 8 GB of RAM and a fair amount of patience.  It is highly recommended that you shut down all unnecessary services.
+Metatron is composed of many components and installing all of these on a single host, especially a virtualized one, will greatly stress the resources of the host.   The host will require at least 8 GB of RAM and a fair amount of patience.  It is highly recommended that you shut down all unnecessary services.
 
 Getting Started
 ---------------
@@ -41,7 +41,7 @@ The computer used to deploy Apache Metron will need to have the following compon
 Running the following script can help validate whether you have all the prerequisites installed and running correctly.
 
   ```
-  metron-deployment/scripts/platform-info.sh
+  metatron-deployment/scripts/platform-info.sh
   ```
 
 #### How do I install these on MacOS?
@@ -67,7 +67,7 @@ Any platform that supports these tools is suitable, but the following instructio
 1. Deploy Metron
 
     ```
-    cd metron-deployment/development/centos6
+    cd metatron-deployment/development/centos6
     vagrant up
     ```
 
@@ -81,7 +81,7 @@ Any platform that supports these tools is suitable, but the following instructio
 
 Navigate to the following resources to explore your newly minted Apache Metron environment.
 
-* [Metron Alerts](http://node1:4201) credentials: user/password
+* [Metatron Alerts](http://node1:4201) credentials: user/password
 * [Ambari](http://node1:8080) credentials: admin/admin
 
 Connecting to the host through SSH is as simple as running the following command.
@@ -105,7 +105,7 @@ Tags are listed in the playbooks.  Here are some frequently used tags:
 
 #### Sensors
 
-By default, the Metron development environment uses sensor stubs to mimic the behavior of the full sensors.  This is done because the full sensors take a significant amount of time and CPU to build, install, and run.
+By default, the Metratron development environment uses sensor stubs to mimic the behavior of the full sensors.  This is done because the full sensors take a significant amount of time and CPU to build, install, and run.
 
 From time to time you may want to install the full sensors for testing (see the specifics of what that means [here](../../ansible/playbooks/sensor_install.yml)).  This can be done by running the following command:
 
