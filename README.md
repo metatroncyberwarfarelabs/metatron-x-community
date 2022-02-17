@@ -149,4 +149,5 @@ Some useful utilities that cross all of these parts of the architecture:
 In order to allow for meta alerts to be queries alongside regular alerts in Elasticsearch 2.x,
 it is necessary to add an additional field to the templates and mapping for existing sensors.
 
-Please see a description of the steps necessary to make this change in the metatron-elasticsearch [Using metatron with Elasticsearch 2.x](https://github.com/metatroncyberwarfare/metatron-framework/tree/main/metron-platform/metron-elasticsearch#using-metron-with-elasticsearch-56)
+Please see a description of the steps necessary to make this change in the metatron-elasticsearch [Using metatron with Elasticsearch 2.x](https://github.com/metatroncyberwarfare/metatron-framework/tree/main/metatron-framework/metatron-platform/metatron-elasticsearch#using-metron-with-elasticsearch-56)
+
