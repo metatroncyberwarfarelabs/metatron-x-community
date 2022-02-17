@@ -1,0 +1,223 @@
+{
+  "template": "yaf_index*",
+  "mappings": {
+    "yaf_doc": {
+      "dynamic_templates": [
+      {
+        "geo_location_point": {
+          "match": "enrichments:geo:*:location_point",
+          "match_mapping_type": "*",
+          "mapping": {
+            "type": "geo_point"
+          }
+        }
+      },
+      {
+        "geo_country": {
+          "match": "enrichments:geo:*:country",
+          "match_mapping_type": "*",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "geo_city": {
+          "match": "enrichments:geo:*:city",
+          "match_mapping_type": "*",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "geo_location_id": {
+          "match": "enrichments:geo:*:locID",
+          "match_mapping_type": "*",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "geo_dma_code": {
+          "match": "enrichments:geo:*:dmaCode",
+          "match_mapping_type": "*",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "geo_postal_code": {
+          "match": "enrichments:geo:*:postalCode",
+          "match_mapping_type": "*",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "geo_latitude": {
+          "match": "enrichments:geo:*:latitude",
+          "match_mapping_type": "*",
+          "mapping": {
+            "type": "float"
+          }
+        }
+      },
+      {
+        "geo_longitude": {
+          "match": "enrichments:geo:*:longitude",
+          "match_mapping_type": "*",
+          "mapping": {
+            "type": "float"
+          }
+        }
+      },
+      {
+        "timestamps": {
+          "match": "*:ts",
+          "match_mapping_type": "*",
+          "mapping": {
+            "type": "date",
+            "format": "epoch_millis"
+          }
+        }
+      },
+      {
+        "threat_triage_score": {
+          "mapping": {
+            "type": "float"
+          },
+          "match": "threat:triage:*score",
+          "match_mapping_type": "*"
+        }
+      },
+      {
+        "threat_triage_reason": {
+          "mapping": {
+            "type": "text",
+            "fielddata": "true"
+          },
+          "match": "threat:triage:rules:*:reason",
+          "match_mapping_type": "*"
+        }
+      },
+      {
+        "threat_triage_name": {
+          "mapping": {
+            "type": "text",
+            "fielddata": "true"
+          },
+          "match": "threat:triage:rules:*:name",
+          "match_mapping_type": "*"
+        }
+      }
+      ],
+      "properties": {
+        "timestamp": {
+          "type": "date",
+          "format": "epoch_millis"
+        },
+        "source:type": {
+          "type": "keyword"
+        },
+        "alert_status": {
+          "type": "keyword"
+        },
+        "ip_dst_addr": {
+          "type": "ip"
+        },
+        "ip_dst_port": {
+          "type": "integer"
+        },
+        "ip_src_addr": {
+          "type": "ip"
+        },
+        "ip_src_port": {
+          "type": "integer"
+        },
+        "start_time": {
+          "type": "date",
+          "format": "epoch_millis"
+        },
+        "end_time": {
+          "type": "date",
+          "format": "epoch_millis"
+        },
+        "duration": {
+          "type": "double"
+        },
+        "rtt": {
+          "type": "double"
+        },
+        "proto": {
+          "type": "keyword"
+        },
+        "sip": {
+          "type": "keyword"
+        },
+        "sp": {
+          "type": "keyword"
+        },
+        "dip": {
+          "type": "keyword"
+        },
+        "dp": {
+          "type": "keyword"
+        },
+        "iflags": {
+          "type": "keyword"
+        },
+        "uflags": {
+          "type": "keyword"
+        },
+        "riflags": {
+          "type": "text",
+          "fielddata": "true"
+        },
+        "ruflags": {
+          "type": "keyword"
+        },
+        "isn": {
+          "type": "keyword"
+        },
+        "risn": {
+          "type": "keyword"
+        },
+        "tag": {
+          "type": "keyword"
+        },
+        "rtag": {
+          "type": "keyword"
+        },
+        "pkt": {
+          "type": "integer"
+        },
+        "oct": {
+          "type": "integer"
+        },
+        "rpkt": {
+          "type": "integer"
+        },
+        "roct": {
+          "type": "integer"
+        },
+        "app": {
+          "type": "keyword"
+        },
+        "end-reason": {
+          "type": "text",
+          "fielddata": "true"
+        },
+        "metron_alert": {
+          "type": "nested"
+        },
+        "guid": {
+          "type": "keyword"
+        }
+      }
+    }
+  }
+}

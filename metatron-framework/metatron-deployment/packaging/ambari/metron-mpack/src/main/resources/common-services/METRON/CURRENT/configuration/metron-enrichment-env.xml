@@ -1,0 +1,342 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<configuration supports_final="true">
+
+  <!--
+    enrichment adapter parameters
+  -->
+  <property>
+    <name>geoip_url</name>
+    <value>http://geolite.maxmind.com/download/geoip/database/GeoLite2-City.tar.gz</value>
+    <description>Location of the GeoIP data to load.</description>
+    <display-name>GEOIP Load Datafile URL</display-name>
+  </property>
+  <property>
+    <name>asn_url</name>
+    <value>http://geolite.maxmind.com/download/geoip/database/GeoLite2-ASN.tar.gz</value>
+    <description>Location of the ASN data to load.</description>
+    <display-name>ASN Load Datafile URL</display-name>
+  </property>
+  <property>
+    <name>enrichment_host_known_hosts</name>
+    <description>List of Known Hosts for Host Enrichment</description>
+    <value>[{"ip":"10.1.128.236", "local":"YES", "type":"webserver", "asset_value" : "important"},{"ip":"10.1.128.237", "local":"UNKNOWN", "type":"unknown", "asset_value" : "important"},{"ip":"10.60.10.254", "local":"YES", "type":"printer", "asset_value" : "important"}]</value>
+    <display-name>Host Enrichment</display-name>
+    <value-attributes>
+      <type>content</type>
+    </value-attributes>
+  </property>
+
+  <!--
+    kafka parameters
+  -->
+  <property>
+    <name>enrichment_kafka_start</name>
+    <description>Enrichment Topology Spout Offset</description>
+    <value>UNCOMMITTED_EARLIEST</value>
+    <display-name>Enrichment Offset</display-name>
+    <value-attributes>
+      <type>value-list</type>
+      <entries>
+        <entry>
+          <value>EARLIEST</value>
+        </entry>
+        <entry>
+          <value>LATEST</value>
+        </entry>
+        <entry>
+          <value>UNCOMMITTED_EARLIEST</value>
+        </entry>
+        <entry>
+          <value>UNCOMMITTED_LATEST</value>
+        </entry>
+      </entries>
+      <selection-cardinality>1</selection-cardinality>
+    </value-attributes>
+  </property>
+  <property>
+    <name>enrichment_input_topic</name>
+    <description>Enrichment Input Topic</description>
+    <value>enrichments</value>
+    <display-name>Enrichment Input Topic</display-name>
+  </property>
+  <property>
+    <name>enrichment_output_topic</name>
+    <description>Enrichment Output Topic</description>
+    <value>indexing</value>
+    <display-name>Enrichment Output Topic</display-name>
+  </property>
+  <property>
+    <name>enrichment_error_topic</name>
+    <description>Enrichment Error Topic</description>
+    <value>indexing</value>
+    <display-name>Enrichment Error Topic</display-name>
+  </property>
+  <property>
+    <name>threatintel_error_topic</name>
+    <description>Threat Intel Error Topic</description>
+    <value>indexing</value>
+    <display-name>Threat Intel Error Topic</display-name>
+  </property>
+  <property>
+    <name>enrichment_kafka_writer_batch_size</name>
+    <value>15</value>
+    <description>The number of records to batch when writing to Kakfa.</description>
+    <display-name>Kafka Writer Batch Size</display-name>
+  </property>
+  <property>
+    <name>enrichment_kafka_writer_batch_timeout</name>
+    <value>0</value>
+    <description>The timeout in milliseconds after which a batch will be written to Kafka, even if the batch size has not been met.  If unspecified, or set to `0`, this defaults to a system-determined duration.</description>
+    <display-name>Kafka Writer Batch Timeout</display-name>
+  </property>
+
+  <!--
+    hbase parameters
+  -->
+  <property>
+    <name>enrichment_hbase_table</name>
+    <value>enrichment</value>
+    <description>The HBase table which will hold enrichment data</description>
+    <display-name>Enrichment HBase Table</display-name>
+  </property>
+  <property>
+    <name>enrichment_hbase_cf</name>
+    <value>t</value>
+    <description>The HBase column family which will hold enrichment data in HBase.</description>
+    <display-name>HBase Table Column Family</display-name>
+  </property>
+  <property>
+    <name>threatintel_hbase_table</name>
+    <value>threatintel</value>
+    <description>The HBase table which will hold threatintel data</description>
+    <display-name>Threatintel HBase Table</display-name>
+  </property>
+  <property>
+    <name>threatintel_hbase_cf</name>
+    <value>t</value>
+    <description>The HBase column family which will hold threatintel data in HBase.</description>
+    <display-name>HBase Table Column Family</display-name>
+  </property>
+  <property>
+    <name>enrichment_list_hbase_provider_impl</name>
+    <value>org.apache.metron.hbase.HTableProvider</value>
+    <description>The HBase table provider implementation to use for obtaining table references.</description>
+    <display-name>Enrichment List HBase Table Provider Implementation</display-name>
+  </property>
+  <property>
+    <name>enrichment_list_hbase_coprocessor_impl</name>
+    <value>org.apache.metron.hbase.coprocessor.EnrichmentCoprocessor</value>
+    <description>The HBase coprocessor implementation to use for managing the enrichment list.</description>
+    <display-name>Enrichment List HBase Coprocessor Implementation</display-name>
+  </property>
+  <property>
+    <name>enrichment_list_hbase_table</name>
+    <value>enrichment_list</value>
+    <description>The HBase table which will hold the list of enrichment types gathered by the enrichment coprocessor.</description>
+    <display-name>Enrichment List HBase Table</display-name>
+  </property>
+  <property>
+    <name>enrichment_list_hbase_cf</name>
+    <value>t</value>
+    <description>The HBase column family which will hold enrichment list data in HBase.</description>
+    <display-name>Enrichment List HBase Column Family</display-name>
+  </property>
+
+  <!--
+    storm common parameters
+  -->
+  <property>
+    <name>enrichment_workers</name>
+    <description>Number of Workers for the Enrichment Topology</description>
+    <value>1</value>
+    <display-name>Enrichment Workers</display-name>
+  </property>
+  <property>
+    <name>enrichment_acker_executors</name>
+    <description>Number of Ackers for the Enrichment Topology</description>
+    <value>1</value>
+    <display-name>Enrichment Ackers</display-name>
+  </property>
+  <property>
+    <name>enrichment_topology_worker_childopts</name>
+    <description>JVM Options for the Enrichment Topology</description>
+    <value/>
+    <display-name>Enrichment childopts</display-name>
+    <value-attributes>
+      <empty-value-valid>true</empty-value-valid>
+    </value-attributes>
+  </property>
+  <property>
+    <name>enrichment_topology_max_spout_pending</name>
+    <description>Spout Max Pending Tuples for the Enrichment Topology</description>
+    <value>500</value>
+    <display-name>Enrichment Max Spout Pending</display-name>
+    <value-attributes>
+      <empty-value-valid>true</empty-value-valid>
+    </value-attributes>
+  </property>
+  <property>
+    <name>enrichment_topology</name>
+    <description>Which Enrichment topology to execute. Note: Split-Join is deprecated in favor of the Unified topology.</description>
+    <value>Unified</value>
+    <display-name>Enrichment Topology</display-name>
+    <value-attributes>
+      <type>value-list</type>
+      <entries>
+        <entry>
+          <value>Unified</value>
+        </entry>
+        <entry>
+          <value>Split-Join</value>
+        </entry>
+      </entries>
+      <selection-cardinality>1</selection-cardinality>
+    </value-attributes>
+  </property>
+
+  <!--
+    split-join topology parameters
+  -->
+  <property>
+    <name>enrichment_join_cache_size</name>
+    <description>Enrichment join bolt max cache size for the Split Join Enrichment Topology</description>
+    <value>100000</value>
+    <display-name>Enrichment Join Max Cache Size</display-name>
+  </property>
+  <property>
+    <name>threatintel_join_cache_size</name>
+    <description>Threat Intel join bolt max cache size for the Split Join Enrichment Topology</description>
+    <value>100000</value>
+    <display-name>Threat Intel Join Max Cache Size</display-name>
+  </property>
+  <property>
+    <name>enrichment_kafka_spout_parallelism</name>
+    <description>Kafka spout parallelism for the Split Join Enrichment Topology</description>
+    <value>1</value>
+    <display-name>Enrichment Spout Parallelism</display-name>
+  </property>
+  <property>
+    <name>enrichment_split_parallelism</name>
+    <description>Enrichment split bolt parallelism for the Split Join Enrichment Topology</description>
+    <value>1</value>
+    <display-name>Enrichment Split Parallelism</display-name>
+  </property>
+  <property>
+    <name>enrichment_stellar_parallelism</name>
+    <description>Stellar enrichment bolt parallelism for the Split Join Enrichment Topology</description>
+    <value>1</value>
+    <display-name>Stellar Enrichment Parallelism</display-name>
+  </property>
+  <property>
+    <name>enrichment_join_parallelism</name>
+    <description>Enrichment join bolt parallelism for the Split Join Enrichment Topology</description>
+    <value>1</value>
+    <display-name>Enrichment Join Parallelism</display-name>
+  </property>
+  <property>
+    <name>threat_intel_split_parallelism</name>
+    <description>Threat Intel split bolt parallelism for the Split Join Enrichment Topology</description>
+    <value>1</value>
+    <display-name>Threat Intel Split Parallelism</display-name>
+  </property>
+  <property>
+    <name>threat_intel_stellar_parallelism</name>
+    <description>Threat Intel stellar bolt parallelism for the Split Join Enrichment Topology</description>
+    <value>1</value>
+    <display-name>Threat Intel Stellar Parallelism</display-name>
+  </property>
+  <property>
+    <name>threat_intel_join_parallelism</name>
+    <description>Threat Intel join bolt parallelism for the Split Join Enrichment Topology</description>
+    <value>1</value>
+    <display-name>Threat Intel Join Parallelism</display-name>
+  </property>
+  <property>
+    <name>kafka_writer_parallelism</name>
+    <description>Kafka writer parallelism for the Split Join Enrichment Topology</description>
+    <value>1</value>
+    <display-name>Enrichment Kafka Writer Parallelism</display-name>
+  </property>
+
+  <!--
+    unified topology parameters
+  -->
+  <property>
+    <name>unified_kafka_spout_parallelism</name>
+    <description>Kafka spout parallelism for the Unified Enrichment Topology</description>
+    <value>1</value>
+    <display-name>Unified Enrichment Spout Parallelism</display-name>
+  </property>
+  <property>
+    <name>unified_enrichment_parallelism</name>
+    <description>Enrichment parallelism for the Unified Enrichment Topology</description>
+    <value>1</value>
+    <display-name>Unified Enrichment Parallelism</display-name>
+  </property>
+  <property>
+    <name>unified_threat_intel_parallelism</name>
+    <description>Threat Intel parallelism for the Unified Enrichment Topology</description>
+    <value>1</value>
+    <display-name>Unified Threat Intel Parallelism</display-name>
+  </property>
+  <property>
+    <name>unified_kafka_writer_parallelism</name>
+    <description>Kafka writer parallelism for the Unified Enrichment Topology</description>
+    <value>1</value>
+    <display-name>Unified Kafka Writer Parallelism</display-name>
+  </property>
+  <property>
+    <name>unified_enrichment_cache_size</name>
+    <description>Enrichment max cache size for the Unified Enrichment Topology</description>
+    <value>100000</value>
+    <display-name>Unified Enrichment Cache Size</display-name>
+  </property>
+  <property>
+    <name>unified_threat_intel_cache_size</name>
+    <description>Threat Intel Max Cache Size for the Unified Enrichment Topology</description>
+    <value>100000</value>
+    <display-name>Unified Threat Intel Cache Size</display-name>
+  </property>
+  <property>
+    <name>unified_enrichment_threadpool_size</name>
+    <description>Enrichment thread pool size for the Unified Enrichment Topology</description>
+    <value>1</value>
+    <display-name>Unified Enrichment Thread Pool Size</display-name>
+  </property>
+  <property>
+    <name>unified_enrichment_threadpool_type</name>
+    <description>Enrichment thread pool type for the Unified Enrichment Topology</description>
+    <display-name>Unified Enrichment Thread Pool Type</display-name>
+    <value>FIXED</value>
+    <value-attributes>
+      <type>value-list</type>
+      <entries>
+        <entry>
+          <value>FIXED</value>
+        </entry>
+        <entry>
+          <value>WORK_STEALING</value>
+        </entry>
+      </entries>
+      <selection-cardinality>1</selection-cardinality>
+    </value-attributes>
+  </property>
+</configuration>

@@ -1,0 +1,84 @@
+# Licensed to the Apache Software Foundation (ASF) under one
+# or more contributor license agreements.  See the NOTICE file
+# distributed with this work for additional information
+# regarding copyright ownership.  The ASF licenses this file
+# to you under the Apache License, Version 2.0 (the
+# "License"); you may not use this file except in compliance
+# with the License.  You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+zookeeper:
+  url: ${ZOOKEEPER}
+
+kafka:
+  broker:
+    url: ${BROKERLIST}
+  security:
+    protocol: ${KAFKA_SECURITY_PROTOCOL}
+  topics:
+    escalation: ${METRON_ESCALATION_TOPIC}
+
+grok:
+  path:
+    temp: ${METRON_TEMP_GROK_PATH}
+
+storm:
+  ui:
+    url: ${STORM_REST_URL}
+  parser:
+    script.path: ${METRON_HOME}/bin/start_parser_topology.sh
+    topology.options: ${PARSER_TOPOLOGY_OPTIONS}
+  enrichment:
+    script.path: ${METRON_HOME}/bin/start_enrichment_topology.sh
+  indexing:
+    randomaccess.script.path: ${METRON_HOME}/bin/start_elasticsearch_topology.sh
+    batch.script.path: ${METRON_HOME}/bin/start_hdfs_topology.sh
+
+kerberos:
+  enabled: ${SECURITY_ENABLED}
+  principal: ${METRON_PRINCIPAL_NAME}
+  keytab: ${METRON_SERVICE_KEYTAB}
+
+pcap:
+  pdml.script.path: ${METRON_HOME}/bin/pcap_to_pdml.sh
+  base.path: ${PCAP_BASE_PATH}
+  base.interim.result.path: ${PCAP_BASE_INTERIM_RESULT_PATH}
+  final.output.path: ${PCAP_FINAL_OUTPUT_PATH}
+  page.size: ${PCAP_PAGE_SIZE}
+  yarn.queue: ${PCAP_YARN_QUEUE}
+  finalizer.threadpool.size: ${PCAP_FINALIZER_THREADPOOL_SIZE}
+
+spring:
+  datasource:
+    driverClassName: ${METRON_JDBC_DRIVER}
+    url: ${METRON_JDBC_URL}
+    username: ${METRON_JDBC_USERNAME}
+    password: ${METRON_JDBC_PASSWORD}
+    platform: ${METRON_JDBC_PLATFORM}
+    continue-on-error: true
+
+ldap:
+  provider:
+    url: ${METRON_LDAP_URL}
+    userdn: ${METRON_LDAP_USERDN}
+    password: ${METRON_LDAP_PASSWORD}
+  user:
+    dn.patterns: ${METRON_LDAP_USER_PATTERN}
+    passwordAttribute: ${METRON_LDAP_USER_PASSWORD}
+    searchBase: ${METRON_LDAP_USER_SEARCHBASE}
+    searchFilter: ${METRON_LDAP_USER_SEARCHFILTER}
+  group:
+    searchBase: ${METRON_LDAP_GROUP_SEARCHBASE}
+    searchFilter: ${METRON_LDAP_GROUP_SEARCHFILTER}
+    roleAttribute: ${METRON_LDAP_GROUP_ROLE}
+
+authorities:
+  user: ${METRON_USER_ROLE}
+  admin: ${METRON_ADMIN_ROLE}

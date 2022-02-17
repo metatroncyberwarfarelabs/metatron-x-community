@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<taxii_11:Poll_Response collection_name="guest.Abuse_ch" more="false" in_response_to="urn:uuid:8bb2bae7-cc8a-43ae-ab81-f581e6e97a7e" message_id="36900" xmlns:xmldsig="http://www.w3.org/2000/09/xmldsig#" xmlns:taxii_11="http://taxii.mitre.org/messages/taxii_xml_binding-1.1">
+    <taxii_11:Inclusive_End_Timestamp>2016-02-22T15:24:02.950562Z</taxii_11:Inclusive_End_Timestamp>
+    <taxii_11:Content_Block>
+        <taxii_11:Content_Binding binding_id="urn:stix.mitre.org:xml:1.1.1"/>
+        <taxii_11:Content>
+            <stix:STIX_Package id="edge:Package-16853623-bf9e-4691-a602-c9e0a9b4777a" timestamp="2016-02-22T15:24:02.958672+00:00" version="1.1.1" xmlns:tlpMarking="http://data-marking.mitre.org/extensions/MarkingStructure#TLP-1" xmlns:stixCommon="http://stix.mitre.org/common-1" xmlns:indicator="http://stix.mitre.org/Indicator-2" xmlns:simpleMarking="http://data-marking.mitre.org/extensions/MarkingStructure#Simple-1" xmlns:edge="http://soltra.com/" xmlns:stixVocabs="http://stix.mitre.org/default_vocabularies-1" xmlns:opensource="http://hailataxii.com" xmlns:cyboxVocabs="http://cybox.mitre.org/default_vocabularies-2" xmlns:ttp="http://stix.mitre.org/TTP-1" xmlns:taxii="http://taxii.mitre.org/messages/taxii_xml_binding-1" xmlns:TOUMarking="http://data-marking.mitre.org/extensions/MarkingStructure#Terms_Of_Use-1" xmlns:stix="http://stix.mitre.org/stix-1" xmlns:marking="http://data-marking.mitre.org/Marking-1" xmlns:tdq="http://taxii.mitre.org/query/taxii_default_query-1" xmlns:cyboxCommon="http://cybox.mitre.org/common-2" xmlns:cybox="http://cybox.mitre.org/cybox-2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <stix:STIX_Header>
+                    <stix:Handling>
+                        <marking:Marking>
+                            <marking:Controlled_Structure>../../../../descendant-or-self::node()</marking:Controlled_Structure>
+                            <marking:Marking_Structure color="WHITE" xsi:type="tlpMarking:TLPMarkingStructureType"/>
+                            <marking:Marking_Structure xsi:type="TOUMarking:TermsOfUseMarkingStructureType">
+                                <TOUMarking:Terms_Of_Use>zeustracker.abuse.ch | Abuse source[https://sslbl.abuse.ch/blacklist/] - As for all abuse.ch projects, the use of the SSL Blacklist is free for both commercial and non-commercial usage without any limitation. However, if you are a commercial vendor of security software/services and you want to integrate data from the SSL Blacklist into your products / services, you will have to ask for permission first by contacting me using the contact form [http://www.abuse.ch/?page_id=4727].'
+</TOUMarking:Terms_Of_Use>
+                </marking:Marking_Structure>
+                            <marking:Marking_Structure xsi:type="simpleMarking:SimpleMarkingStructureType">
+                                <simpleMarking:Statement>Unclassified (Public)</simpleMarking:Statement>
+                </marking:Marking_Structure>
+            </marking:Marking>
+        </stix:Handling>
+    </stix:STIX_Header>
+                <stix:Indicators>
+                    <stix:Indicator id="opensource:indicator-e04fe4b7-82ae-4586-99bc-40b8c1d99304" timestamp="2014-10-31T16:44:24.973043+00:00" version="2.1.1" xsi:type="indicator:IndicatorType">
+                        <indicator:Title>ZeuS Tracker (offline)| www.office-112.com/wp-blog/offi.bin (2014-10-13) | This domain has been identified as malicious by zeustracker.abuse.ch</indicator:Title>
+                        <indicator:Type xsi:type="stixVocabs:IndicatorTypeVocab-1.1">Domain Watchlist</indicator:Type>
+                        <indicator:Type xsi:type="stixVocabs:IndicatorTypeVocab-1.1">URL Watchlist</indicator:Type>
+                        <indicator:Type xsi:type="stixVocabs:IndicatorTypeVocab-1.1">File Hash Watchlist</indicator:Type>
+                        <indicator:Description>This domain www.office-112.com has been identified as malicious by zeustracker.abuse.ch. For more detailed infomation about this indicator go to [CAUTION!!Read-URL-Before-Click] [https://zeustracker.abuse.ch/monitor.php?host=www.office-112.com].</indicator:Description>
+                        <indicator:Observable idref="opensource:Observable-c374c3ab-5c34-46bb-aa56-2e2d33de8c18">
+            </indicator:Observable>
+                        <indicator:Indicated_TTP>
+                            <stixCommon:TTP idref="opensource:ttp-48eaa91e-c331-4e1d-89e3-254b440cd927" xsi:type="ttp:TTPType"/>
+            </indicator:Indicated_TTP>
+                        <indicator:Producer>
+                            <stixCommon:Identity id="opensource:Identity-cae1a346-9f33-488f-af6e-1109692473ee">
+                                <stixCommon:Name>zeustracker.abuse.ch</stixCommon:Name>
+                </stixCommon:Identity>
+                            <stixCommon:Time>
+                                <cyboxCommon:Produced_Time>2014-10-13T00:00:00+00:00</cyboxCommon:Produced_Time>
+                                <cyboxCommon:Received_Time>2014-10-20T19:29:30+00:00</cyboxCommon:Received_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+    </stix:Indicators>
+</stix:STIX_Package>
+        </taxii_11:Content>
+        <taxii_11:Timestamp_Label>2016-02-22T15:24:02.960198Z</taxii_11:Timestamp_Label>
+    </taxii_11:Content_Block>
+    <taxii_11:Content_Block>
+        <taxii_11:Content_Binding binding_id="urn:stix.mitre.org:xml:1.1.1"/>
+        <taxii_11:Content>
+            <stix:STIX_Package id="edge:Package-b1c62719-4936-4c1e-822f-43596dc85a98" timestamp="2016-02-22T15:24:02.960865+00:00" version="1.1.1" xmlns:stixCommon="http://stix.mitre.org/common-1" xmlns:tlpMarking="http://data-marking.mitre.org/extensions/MarkingStructure#TLP-1" xmlns:simpleMarking="http://data-marking.mitre.org/extensions/MarkingStructure#Simple-1" xmlns:edge="http://soltra.com/" xmlns:stixVocabs="http://stix.mitre.org/default_vocabularies-1" xmlns:opensource="http://hailataxii.com" xmlns:cyboxVocabs="http://cybox.mitre.org/default_vocabularies-2" xmlns:ttp="http://stix.mitre.org/TTP-1" xmlns:taxii="http://taxii.mitre.org/messages/taxii_xml_binding-1" xmlns:TOUMarking="http://data-marking.mitre.org/extensions/MarkingStructure#Terms_Of_Use-1" xmlns:stix="http://stix.mitre.org/stix-1" xmlns:marking="http://data-marking.mitre.org/Marking-1" xmlns:tdq="http://taxii.mitre.org/query/taxii_default_query-1" xmlns:cyboxCommon="http://cybox.mitre.org/common-2" xmlns:cybox="http://cybox.mitre.org/cybox-2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <stix:STIX_Header>
+                    <stix:Handling>
+                        <marking:Marking>
+                            <marking:Controlled_Structure>../../../../descendant-or-self::node()</marking:Controlled_Structure>
+                            <marking:Marking_Structure color="WHITE" xsi:type="tlpMarking:TLPMarkingStructureType"/>
+                            <marking:Marking_Structure xsi:type="TOUMarking:TermsOfUseMarkingStructureType">
+                                <TOUMarking:Terms_Of_Use>zeustracker.abuse.ch | Abuse source[https://sslbl.abuse.ch/blacklist/] - As for all abuse.ch projects, the use of the SSL Blacklist is free for both commercial and non-commercial usage without any limitation. However, if you are a commercial vendor of security software/services and you want to integrate data from the SSL Blacklist into your products / services, you will have to ask for permission first by contacting me using the contact form [http://www.abuse.ch/?page_id=4727].'
+</TOUMarking:Terms_Of_Use>
+                </marking:Marking_Structure>
+                            <marking:Marking_Structure xsi:type="simpleMarking:SimpleMarkingStructureType">
+                                <simpleMarking:Statement>Unclassified (Public)</simpleMarking:Statement>
+                </marking:Marking_Structure>
+            </marking:Marking>
+        </stix:Handling>
+    </stix:STIX_Header>
+                <stix:TTPs>
+                    <stix:TTP id="opensource:ttp-48eaa91e-c331-4e1d-89e3-254b440cd927" timestamp="2014-10-31T16:44:24.974454+00:00" version="1.1.1" xsi:type="ttp:TTPType">
+                        <ttp:Title>ZeuS</ttp:Title>
+                        <ttp:Behavior>
+                            <ttp:Malware>
+                                <ttp:Malware_Instance id="opensource:malware-4eafc7e8-833c-4807-986c-bfbca8a9e86e">
+                                    <ttp:Type xsi:type="stixVocabs:MalwareTypeVocab-1.0">Remote Access Trojan</ttp:Type>
+                                    <ttp:Name>ZeuS</ttp:Name>
+                                    <ttp:Name>Zbot</ttp:Name>
+                                    <ttp:Name>Zeus</ttp:Name>
+                                    <ttp:Description>Zeus, ZeuS, or Zbot is Trojan horse computer malware that runs on computers running under versions of the Microsoft Windows operating system. While it is capable of being used to carry out many malicious and criminal tasks, it is often used to steal banking information by man-in-the-browser keystroke logging and form grabbing. It is also used to install the CryptoLocker ransomware.[1] Zeus is spread mainly through drive-by downloads and phishing schemes. (2014(http://en.wikipedia.org/wiki/Zeus_%28Trojan_horse%29))</ttp:Description>
+                                    <ttp:Short_Description>Zeus, ZeuS, or Zbot is Trojan horse computer malware effects Microsoft Windows operating system</ttp:Short_Description>
+                    </ttp:Malware_Instance>
+                </ttp:Malware>
+            </ttp:Behavior>
+        </stix:TTP>
+    </stix:TTPs>
+</stix:STIX_Package>
+        </taxii_11:Content>
+        <taxii_11:Timestamp_Label>2016-02-22T15:24:02.961541Z</taxii_11:Timestamp_Label>
+    </taxii_11:Content_Block>
+    <taxii_11:Content_Block>
+        <taxii_11:Content_Binding binding_id="urn:stix.mitre.org:xml:1.1.1"/>
+        <taxii_11:Content>
+            <stix:STIX_Package id="edge:Package-466aa3c2-3c73-4e17-856a-299c0ce8e53b" timestamp="2016-02-22T15:24:02.962045+00:00" version="1.1.1" xmlns:stixCommon="http://stix.mitre.org/common-1" xmlns:tlpMarking="http://data-marking.mitre.org/extensions/MarkingStructure#TLP-1" xmlns:simpleMarking="http://data-marking.mitre.org/extensions/MarkingStructure#Simple-1" xmlns:edge="http://soltra.com/" xmlns:stixVocabs="http://stix.mitre.org/default_vocabularies-1" xmlns:opensource="http://hailataxii.com" xmlns:cyboxVocabs="http://cybox.mitre.org/default_vocabularies-2" xmlns:taxii="http://taxii.mitre.org/messages/taxii_xml_binding-1" xmlns:TOUMarking="http://data-marking.mitre.org/extensions/MarkingStructure#Terms_Of_Use-1" xmlns:stix="http://stix.mitre.org/stix-1" xmlns:marking="http://data-marking.mitre.org/Marking-1" xmlns:tdq="http://taxii.mitre.org/query/taxii_default_query-1" xmlns:cyboxCommon="http://cybox.mitre.org/common-2" xmlns:cybox="http://cybox.mitre.org/cybox-2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <stix:STIX_Header>
+                    <stix:Handling>
+                        <marking:Marking>
+                            <marking:Controlled_Structure>../../../../descendant-or-self::node()</marking:Controlled_Structure>
+                            <marking:Marking_Structure color="WHITE" xsi:type="tlpMarking:TLPMarkingStructureType"/>
+                            <marking:Marking_Structure xsi:type="TOUMarking:TermsOfUseMarkingStructureType">
+                                <TOUMarking:Terms_Of_Use>zeustracker.abuse.ch | Abuse source[https://sslbl.abuse.ch/blacklist/] - As for all abuse.ch projects, the use of the SSL Blacklist is free for both commercial and non-commercial usage without any limitation. However, if you are a commercial vendor of security software/services and you want to integrate data from the SSL Blacklist into your products / services, you will have to ask for permission first by contacting me using the contact form [http://www.abuse.ch/?page_id=4727].'
+</TOUMarking:Terms_Of_Use>
+                </marking:Marking_Structure>
+                            <marking:Marking_Structure xsi:type="simpleMarking:SimpleMarkingStructureType">
+                                <simpleMarking:Statement>Unclassified (Public)</simpleMarking:Statement>
+                </marking:Marking_Structure>
+            </marking:Marking>
+        </stix:Handling>
+    </stix:STIX_Header>
+                <stix:Observables cybox_major_version="2" cybox_minor_version="1" cybox_update_version="0">
+                    <cybox:Observable id="opensource:Observable-c374c3ab-5c34-46bb-aa56-2e2d33de8c18">
+                        <cybox:Observable_Composition operator="OR">
+                            <cybox:Observable idref="opensource:Observable-b2084701-ab03-4233-b3ee-4cf96e3b9131">
+                </cybox:Observable>
+                            <cybox:Observable idref="opensource:Observable-84495ed8-634c-4ef8-aeb0-5968e1ef065b">
+                </cybox:Observable>
+                            <cybox:Observable idref="opensource:Observable-61b0fce7-df20-4f5f-a410-a2e1f80debc4">
+                </cybox:Observable>
+            </cybox:Observable_Composition>
+        </cybox:Observable>
+    </stix:Observables>
+</stix:STIX_Package>
+        </taxii_11:Content>
+        <taxii_11:Timestamp_Label>2016-02-22T15:24:02.962573Z</taxii_11:Timestamp_Label>
+    </taxii_11:Content_Block>
+    <taxii_11:Content_Block>
+        <taxii_11:Content_Binding binding_id="urn:stix.mitre.org:xml:1.1.1"/>
+        <taxii_11:Content>
+            <stix:STIX_Package id="edge:Package-4aac2ef7-e5ae-413b-9da8-80457a3a5a1c" timestamp="2016-02-22T15:24:02.963049+00:00" version="1.1.1" xmlns:stixCommon="http://stix.mitre.org/common-1" xmlns:tlpMarking="http://data-marking.mitre.org/extensions/MarkingStructure#TLP-1" xmlns:simpleMarking="http://data-marking.mitre.org/extensions/MarkingStructure#Simple-1" xmlns:edge="http://soltra.com/" xmlns:stixVocabs="http://stix.mitre.org/default_vocabularies-1" xmlns:opensource="http://hailataxii.com" xmlns:cyboxVocabs="http://cybox.mitre.org/default_vocabularies-2" xmlns:FileObj="http://cybox.mitre.org/objects#FileObject-2" xmlns:taxii="http://taxii.mitre.org/messages/taxii_xml_binding-1" xmlns:TOUMarking="http://data-marking.mitre.org/extensions/MarkingStructure#Terms_Of_Use-1" xmlns:stix="http://stix.mitre.org/stix-1" xmlns:marking="http://data-marking.mitre.org/Marking-1" xmlns:tdq="http://taxii.mitre.org/query/taxii_default_query-1" xmlns:cyboxCommon="http://cybox.mitre.org/common-2" xmlns:cybox="http://cybox.mitre.org/cybox-2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <stix:STIX_Header>
+                    <stix:Handling>
+                        <marking:Marking>
+                            <marking:Controlled_Structure>../../../../descendant-or-self::node()</marking:Controlled_Structure>
+                            <marking:Marking_Structure color="WHITE" xsi:type="tlpMarking:TLPMarkingStructureType"/>
+                            <marking:Marking_Structure xsi:type="TOUMarking:TermsOfUseMarkingStructureType">
+                                <TOUMarking:Terms_Of_Use>zeustracker.abuse.ch | Abuse source[https://sslbl.abuse.ch/blacklist/] - As for all abuse.ch projects, the use of the SSL Blacklist is free for both commercial and non-commercial usage without any limitation. However, if you are a commercial vendor of security software/services and you want to integrate data from the SSL Blacklist into your products / services, you will have to ask for permission first by contacting me using the contact form [http://www.abuse.ch/?page_id=4727].'
+</TOUMarking:Terms_Of_Use>
+                </marking:Marking_Structure>
+                            <marking:Marking_Structure xsi:type="simpleMarking:SimpleMarkingStructureType">
+                                <simpleMarking:Statement>Unclassified (Public)</simpleMarking:Statement>
+                </marking:Marking_Structure>
+            </marking:Marking>
+        </stix:Handling>
+    </stix:STIX_Header>
+                <stix:Observables cybox_major_version="2" cybox_minor_version="1" cybox_update_version="0">
+                    <cybox:Observable id="opensource:Observable-61b0fce7-df20-4f5f-a410-a2e1f80debc4" sighting_count="1">
+                        <cybox:Title>File: offi.bin</cybox:Title>
+                        <cybox:Description>FileName: offi.bin | FileHash: f4004af2ad5e52fc9a67c5950978b141 | </cybox:Description>
+                        <cybox:Object id="opensource:File-15a9628d-42c7-43c8-ac4c-fc1237db2cdb">
+                            <cybox:Properties xsi:type="FileObj:FileObjectType">
+                                <FileObj:File_Name>offi.bin</FileObj:File_Name>
+                                <FileObj:File_Format>bin</FileObj:File_Format>
+                                <FileObj:Hashes>
+                                    <cyboxCommon:Hash>
+                                        <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">MD5</cyboxCommon:Type>
+                                        <cyboxCommon:Simple_Hash_Value condition="Equals">f4004af2ad5e52fc9a67c5950978b141</cyboxCommon:Simple_Hash_Value>
+                        </cyboxCommon:Hash>
+                    </FileObj:Hashes>
+                </cybox:Properties>
+            </cybox:Object>
+        </cybox:Observable>
+    </stix:Observables>
+</stix:STIX_Package>
+        </taxii_11:Content>
+        <taxii_11:Timestamp_Label>2016-02-22T15:24:02.964187Z</taxii_11:Timestamp_Label>
+    </taxii_11:Content_Block>
+    <taxii_11:Content_Block>
+        <taxii_11:Content_Binding binding_id="urn:stix.mitre.org:xml:1.1.1"/>
+        <taxii_11:Content>
+            <stix:STIX_Package id="edge:Package-7724b0a5-e820-4320-b1aa-6bee89070ea9" timestamp="2016-02-22T15:24:02.964677+00:00" version="1.1.1" xmlns:stixCommon="http://stix.mitre.org/common-1" xmlns:tlpMarking="http://data-marking.mitre.org/extensions/MarkingStructure#TLP-1" xmlns:simpleMarking="http://data-marking.mitre.org/extensions/MarkingStructure#Simple-1" xmlns:edge="http://soltra.com/" xmlns:stixVocabs="http://stix.mitre.org/default_vocabularies-1" xmlns:opensource="http://hailataxii.com" xmlns:cyboxVocabs="http://cybox.mitre.org/default_vocabularies-2" xmlns:taxii="http://taxii.mitre.org/messages/taxii_xml_binding-1" xmlns:TOUMarking="http://data-marking.mitre.org/extensions/MarkingStructure#Terms_Of_Use-1" xmlns:stix="http://stix.mitre.org/stix-1" xmlns:marking="http://data-marking.mitre.org/Marking-1" xmlns:tdq="http://taxii.mitre.org/query/taxii_default_query-1" xmlns:cyboxCommon="http://cybox.mitre.org/common-2" xmlns:URIObj="http://cybox.mitre.org/objects#URIObject-2" xmlns:cybox="http://cybox.mitre.org/cybox-2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <stix:STIX_Header>
+                    <stix:Handling>
+                        <marking:Marking>
+                            <marking:Controlled_Structure>../../../../descendant-or-self::node()</marking:Controlled_Structure>
+                            <marking:Marking_Structure color="WHITE" xsi:type="tlpMarking:TLPMarkingStructureType"/>
+                            <marking:Marking_Structure xsi:type="TOUMarking:TermsOfUseMarkingStructureType">
+                                <TOUMarking:Terms_Of_Use>zeustracker.abuse.ch | Abuse source[https://sslbl.abuse.ch/blacklist/] - As for all abuse.ch projects, the use of the SSL Blacklist is free for both commercial and non-commercial usage without any limitation. However, if you are a commercial vendor of security software/services and you want to integrate data from the SSL Blacklist into your products / services, you will have to ask for permission first by contacting me using the contact form [http://www.abuse.ch/?page_id=4727].'
+</TOUMarking:Terms_Of_Use>
+                </marking:Marking_Structure>
+                            <marking:Marking_Structure xsi:type="simpleMarking:SimpleMarkingStructureType">
+                                <simpleMarking:Statement>Unclassified (Public)</simpleMarking:Statement>
+                </marking:Marking_Structure>
+            </marking:Marking>
+        </stix:Handling>
+    </stix:STIX_Header>
+                <stix:Observables cybox_major_version="2" cybox_minor_version="1" cybox_update_version="0">
+                    <cybox:Observable id="opensource:Observable-84495ed8-634c-4ef8-aeb0-5968e1ef065b" sighting_count="1">
+                        <cybox:Title>URI: http://www.office-112.com/wp-blog/offi.bin</cybox:Title>
+                        <cybox:Description>URI: http://www.office-112.com/wp-blog/offi.bin | Type: URL | </cybox:Description>
+                        <cybox:Object id="opensource:URI-a56683cd-0553-46ee-b197-431928b184b1">
+                            <cybox:Properties type="URL" xsi:type="URIObj:URIObjectType">
+                                <URIObj:Value condition="Equals">http://www.office-112.com/wp-blog/offi.bin</URIObj:Value>
+                </cybox:Properties>
+            </cybox:Object>
+        </cybox:Observable>
+    </stix:Observables>
+</stix:STIX_Package>
+        </taxii_11:Content>
+        <taxii_11:Timestamp_Label>2016-02-22T15:24:02.965365Z</taxii_11:Timestamp_Label>
+    </taxii_11:Content_Block>
+    <taxii_11:Content_Block>
+        <taxii_11:Content_Binding binding_id="urn:stix.mitre.org:xml:1.1.1"/>
+        <taxii_11:Content>
+            <stix:STIX_Package id="edge:Package-ee87f913-a31c-4fa8-84c9-d7b5212f3483" timestamp="2016-02-22T15:24:02.965950+00:00" version="1.1.1" xmlns:stixCommon="http://stix.mitre.org/common-1" xmlns:tlpMarking="http://data-marking.mitre.org/extensions/MarkingStructure#TLP-1" xmlns:simpleMarking="http://data-marking.mitre.org/extensions/MarkingStructure#Simple-1" xmlns:edge="http://soltra.com/" xmlns:DomainNameObj="http://cybox.mitre.org/objects#DomainNameObject-1" xmlns:stixVocabs="http://stix.mitre.org/default_vocabularies-1" xmlns:opensource="http://hailataxii.com" xmlns:cyboxVocabs="http://cybox.mitre.org/default_vocabularies-2" xmlns:taxii="http://taxii.mitre.org/messages/taxii_xml_binding-1" xmlns:TOUMarking="http://data-marking.mitre.org/extensions/MarkingStructure#Terms_Of_Use-1" xmlns:stix="http://stix.mitre.org/stix-1" xmlns:marking="http://data-marking.mitre.org/Marking-1" xmlns:tdq="http://taxii.mitre.org/query/taxii_default_query-1" xmlns:cyboxCommon="http://cybox.mitre.org/common-2" xmlns:cybox="http://cybox.mitre.org/cybox-2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <stix:STIX_Header>
+                    <stix:Handling>
+                        <marking:Marking>
+                            <marking:Controlled_Structure>../../../../descendant-or-self::node()</marking:Controlled_Structure>
+                            <marking:Marking_Structure color="WHITE" xsi:type="tlpMarking:TLPMarkingStructureType"/>
+                            <marking:Marking_Structure xsi:type="TOUMarking:TermsOfUseMarkingStructureType">
+                                <TOUMarking:Terms_Of_Use>zeustracker.abuse.ch | Abuse source[https://sslbl.abuse.ch/blacklist/] - As for all abuse.ch projects, the use of the SSL Blacklist is free for both commercial and non-commercial usage without any limitation. However, if you are a commercial vendor of security software/services and you want to integrate data from the SSL Blacklist into your products / services, you will have to ask for permission first by contacting me using the contact form [http://www.abuse.ch/?page_id=4727].'
+</TOUMarking:Terms_Of_Use>
+                </marking:Marking_Structure>
+                            <marking:Marking_Structure xsi:type="simpleMarking:SimpleMarkingStructureType">
+                                <simpleMarking:Statement>Unclassified (Public)</simpleMarking:Statement>
+                </marking:Marking_Structure>
+            </marking:Marking>
+        </stix:Handling>
+    </stix:STIX_Header>
+                <stix:Observables cybox_major_version="2" cybox_minor_version="1" cybox_update_version="0">
+                    <cybox:Observable id="opensource:Observable-b2084701-ab03-4233-b3ee-4cf96e3b9131" sighting_count="1">
+                        <cybox:Title>Domain: www.office-112.com</cybox:Title>
+                        <cybox:Description>Domain: www.office-112.com | isFQDN: True | </cybox:Description>
+                        <cybox:Object id="opensource:DomainName-045c58ac-5fb4-4b84-95a2-19cf91c1e166">
+                            <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType">
+                                <DomainNameObj:Value condition="Equals">www.office-112.com</DomainNameObj:Value>
+                </cybox:Properties>
+            </cybox:Object>
+        </cybox:Observable>
+    </stix:Observables>
+</stix:STIX_Package>
+        </taxii_11:Content>
+        <taxii_11:Timestamp_Label>2016-02-22T15:24:02.966541Z</taxii_11:Timestamp_Label>
+    </taxii_11:Content_Block>
+    <taxii_11:Content_Block>
+        <taxii_11:Content_Binding binding_id="urn:stix.mitre.org:xml:1.1.1"/>
+        <taxii_11:Content>
+            <stix:STIX_Package id="edge:Package-faf794a7-b20f-4ef2-8b81-08d706799b9d" timestamp="2016-02-22T15:24:02.966875+00:00" version="1.1.1" xmlns:stixCommon="http://stix.mitre.org/common-1" xmlns:tlpMarking="http://data-marking.mitre.org/extensions/MarkingStructure#TLP-1" xmlns:indicator="http://stix.mitre.org/Indicator-2" xmlns:simpleMarking="http://data-marking.mitre.org/extensions/MarkingStructure#Simple-1" xmlns:edge="http://soltra.com/" xmlns:stixVocabs="http://stix.mitre.org/default_vocabularies-1" xmlns:opensource="http://hailataxii.com" xmlns:cyboxVocabs="http://cybox.mitre.org/default_vocabularies-2" xmlns:ttp="http://stix.mitre.org/TTP-1" xmlns:taxii="http://taxii.mitre.org/messages/taxii_xml_binding-1" xmlns:TOUMarking="http://data-marking.mitre.org/extensions/MarkingStructure#Terms_Of_Use-1" xmlns:stix="http://stix.mitre.org/stix-1" xmlns:marking="http://data-marking.mitre.org/Marking-1" xmlns:tdq="http://taxii.mitre.org/query/taxii_default_query-1" xmlns:cyboxCommon="http://cybox.mitre.org/common-2" xmlns:cybox="http://cybox.mitre.org/cybox-2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <stix:STIX_Header>
+                    <stix:Handling>
+                        <marking:Marking>
+                            <marking:Controlled_Structure>../../../../descendant-or-self::node()</marking:Controlled_Structure>
+                            <marking:Marking_Structure color="WHITE" xsi:type="tlpMarking:TLPMarkingStructureType"/>
+                            <marking:Marking_Structure xsi:type="TOUMarking:TermsOfUseMarkingStructureType">
+                                <TOUMarking:Terms_Of_Use>zeustracker.abuse.ch | Abuse source[https://sslbl.abuse.ch/blacklist/] - As for all abuse.ch projects, the use of the SSL Blacklist is free for both commercial and non-commercial usage without any limitation. However, if you are a commercial vendor of security software/services and you want to integrate data from the SSL Blacklist into your products / services, you will have to ask for permission first by contacting me using the contact form [http://www.abuse.ch/?page_id=4727].'
+</TOUMarking:Terms_Of_Use>
+                </marking:Marking_Structure>
+                            <marking:Marking_Structure xsi:type="simpleMarking:SimpleMarkingStructureType">
+                                <simpleMarking:Statement>Unclassified (Public)</simpleMarking:Statement>
+                </marking:Marking_Structure>
+            </marking:Marking>
+        </stix:Handling>
+    </stix:STIX_Header>
+                <stix:Indicators>
+                    <stix:Indicator id="opensource:indicator-5c797902-13ea-4b3f-abb4-867eab337185" timestamp="2014-10-31T16:44:24.723668+00:00" version="2.1.1" xsi:type="indicator:IndicatorType">
+                        <indicator:Title>ZeuS Tracker (offline)| 94.102.53.142/~zadmin/find/http.bin (2014-10-14) | This IP address has been identified as malicious by zeustracker.abuse.ch</indicator:Title>
+                        <indicator:Type xsi:type="stixVocabs:IndicatorTypeVocab-1.1">IP Watchlist</indicator:Type>
+                        <indicator:Type xsi:type="stixVocabs:IndicatorTypeVocab-1.1">URL Watchlist</indicator:Type>
+                        <indicator:Type xsi:type="stixVocabs:IndicatorTypeVocab-1.1">File Hash Watchlist</indicator:Type>
+                        <indicator:Description>This IP address 94.102.53.142 has been identified as malicious by zeustracker.abuse.ch. For more detailed infomation about this indicator go to [CAUTION!!Read-URL-Before-Click] [https://zeustracker.abuse.ch/monitor.php?host=94.102.53.142].</indicator:Description>
+                        <indicator:Observable idref="opensource:Observable-87fd80af-647f-43ab-8992-3fe478593793">
+            </indicator:Observable>
+                        <indicator:Indicated_TTP>
+                            <stixCommon:TTP idref="opensource:ttp-08b96668-60fe-4a85-b28e-31fc9fe917c2" xsi:type="ttp:TTPType"/>
+            </indicator:Indicated_TTP>
+                        <indicator:Producer>
+                            <stixCommon:Identity id="opensource:Identity-6c77d05c-9929-4d50-bcc7-edd06125ca38">
+                                <stixCommon:Name>zeustracker.abuse.ch</stixCommon:Name>
+                </stixCommon:Identity>
+                            <stixCommon:Time>
+                                <cyboxCommon:Produced_Time>2014-10-14T00:00:00+00:00</cyboxCommon:Produced_Time>
+                                <cyboxCommon:Received_Time>2014-10-20T19:29:30+00:00</cyboxCommon:Received_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+    </stix:Indicators>
+</stix:STIX_Package>
+        </taxii_11:Content>
+        <taxii_11:Timestamp_Label>2016-02-22T15:24:02.968141Z</taxii_11:Timestamp_Label>
+    </taxii_11:Content_Block>
+    <taxii_11:Content_Block>
+        <taxii_11:Content_Binding binding_id="urn:stix.mitre.org:xml:1.1.1"/>
+        <taxii_11:Content>
+            <stix:STIX_Package id="edge:Package-61200a02-db0c-42dd-a156-0d8c230ffcde" timestamp="2016-02-22T15:24:02.968669+00:00" version="1.1.1" xmlns:stixCommon="http://stix.mitre.org/common-1" xmlns:tlpMarking="http://data-marking.mitre.org/extensions/MarkingStructure#TLP-1" xmlns:simpleMarking="http://data-marking.mitre.org/extensions/MarkingStructure#Simple-1" xmlns:edge="http://soltra.com/" xmlns:stixVocabs="http://stix.mitre.org/default_vocabularies-1" xmlns:opensource="http://hailataxii.com" xmlns:cyboxVocabs="http://cybox.mitre.org/default_vocabularies-2" xmlns:taxii="http://taxii.mitre.org/messages/taxii_xml_binding-1" xmlns:TOUMarking="http://data-marking.mitre.org/extensions/MarkingStructure#Terms_Of_Use-1" xmlns:stix="http://stix.mitre.org/stix-1" xmlns:marking="http://data-marking.mitre.org/Marking-1" xmlns:tdq="http://taxii.mitre.org/query/taxii_default_query-1" xmlns:cyboxCommon="http://cybox.mitre.org/common-2" xmlns:cybox="http://cybox.mitre.org/cybox-2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <stix:STIX_Header>
+                    <stix:Handling>
+                        <marking:Marking>
+                            <marking:Controlled_Structure>../../../../descendant-or-self::node()</marking:Controlled_Structure>
+                            <marking:Marking_Structure color="WHITE" xsi:type="tlpMarking:TLPMarkingStructureType"/>
+                            <marking:Marking_Structure xsi:type="TOUMarking:TermsOfUseMarkingStructureType">
+                                <TOUMarking:Terms_Of_Use>zeustracker.abuse.ch | Abuse source[https://sslbl.abuse.ch/blacklist/] - As for all abuse.ch projects, the use of the SSL Blacklist is free for both commercial and non-commercial usage without any limitation. However, if you are a commercial vendor of security software/services and you want to integrate data from the SSL Blacklist into your products / services, you will have to ask for permission first by contacting me using the contact form [http://www.abuse.ch/?page_id=4727].'
+</TOUMarking:Terms_Of_Use>
+                </marking:Marking_Structure>
+                            <marking:Marking_Structure xsi:type="simpleMarking:SimpleMarkingStructureType">
+                                <simpleMarking:Statement>Unclassified (Public)</simpleMarking:Statement>
+                </marking:Marking_Structure>
+            </marking:Marking>
+        </stix:Handling>
+    </stix:STIX_Header>
+                <stix:Observables cybox_major_version="2" cybox_minor_version="1" cybox_update_version="0">
+                    <cybox:Observable id="opensource:Observable-87fd80af-647f-43ab-8992-3fe478593793">
+                        <cybox:Observable_Composition operator="OR">
+                            <cybox:Observable idref="opensource:Observable-2aa6d9ec-633a-4dbf-9410-64efce2422ff">
+                </cybox:Observable>
+                            <cybox:Observable idref="opensource:Observable-010363d5-cca4-47ac-8538-23a1151fbcfd">
+                </cybox:Observable>
+                            <cybox:Observable idref="opensource:Observable-e49fe4fb-6aef-486d-be21-0ec8a371ddb1">
+                </cybox:Observable>
+            </cybox:Observable_Composition>
+        </cybox:Observable>
+    </stix:Observables>
+</stix:STIX_Package>
+        </taxii_11:Content>
+        <taxii_11:Timestamp_Label>2016-02-22T15:24:02.969150Z</taxii_11:Timestamp_Label>
+    </taxii_11:Content_Block>
+    <taxii_11:Content_Block>
+        <taxii_11:Content_Binding binding_id="urn:stix.mitre.org:xml:1.1.1"/>
+        <taxii_11:Content>
+            <stix:STIX_Package id="edge:Package-c56b73b0-9e74-4f98-adfe-4d3fbe49fd66" timestamp="2016-02-22T15:24:02.969617+00:00" version="1.1.1" xmlns:stixCommon="http://stix.mitre.org/common-1" xmlns:tlpMarking="http://data-marking.mitre.org/extensions/MarkingStructure#TLP-1" xmlns:simpleMarking="http://data-marking.mitre.org/extensions/MarkingStructure#Simple-1" xmlns:edge="http://soltra.com/" xmlns:stixVocabs="http://stix.mitre.org/default_vocabularies-1" xmlns:opensource="http://hailataxii.com" xmlns:cyboxVocabs="http://cybox.mitre.org/default_vocabularies-2" xmlns:taxii="http://taxii.mitre.org/messages/taxii_xml_binding-1" xmlns:TOUMarking="http://data-marking.mitre.org/extensions/MarkingStructure#Terms_Of_Use-1" xmlns:stix="http://stix.mitre.org/stix-1" xmlns:marking="http://data-marking.mitre.org/Marking-1" xmlns:tdq="http://taxii.mitre.org/query/taxii_default_query-1" xmlns:cyboxCommon="http://cybox.mitre.org/common-2" xmlns:URIObj="http://cybox.mitre.org/objects#URIObject-2" xmlns:cybox="http://cybox.mitre.org/cybox-2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <stix:STIX_Header>
+                    <stix:Handling>
+                        <marking:Marking>
+                            <marking:Controlled_Structure>../../../../descendant-or-self::node()</marking:Controlled_Structure>
+                            <marking:Marking_Structure color="WHITE" xsi:type="tlpMarking:TLPMarkingStructureType"/>
+                            <marking:Marking_Structure xsi:type="TOUMarking:TermsOfUseMarkingStructureType">
+                                <TOUMarking:Terms_Of_Use>zeustracker.abuse.ch | Abuse source[https://sslbl.abuse.ch/blacklist/] - As for all abuse.ch projects, the use of the SSL Blacklist is free for both commercial and non-commercial usage without any limitation. However, if you are a commercial vendor of security software/services and you want to integrate data from the SSL Blacklist into your products / services, you will have to ask for permission first by contacting me using the contact form [http://www.abuse.ch/?page_id=4727].'
+</TOUMarking:Terms_Of_Use>
+                </marking:Marking_Structure>
+                            <marking:Marking_Structure xsi:type="simpleMarking:SimpleMarkingStructureType">
+                                <simpleMarking:Statement>Unclassified (Public)</simpleMarking:Statement>
+                </marking:Marking_Structure>
+            </marking:Marking>
+        </stix:Handling>
+    </stix:STIX_Header>
+                <stix:Observables cybox_major_version="2" cybox_minor_version="1" cybox_update_version="0">
+                    <cybox:Observable id="opensource:Observable-010363d5-cca4-47ac-8538-23a1151fbcfd" sighting_count="1">
+                        <cybox:Title>URI: http://94.102.53.142/~zadmin/find/http.bin</cybox:Title>
+                        <cybox:Description>URI: http://94.102.53.142/~zadmin/find/http.bin | Type: URL | </cybox:Description>
+                        <cybox:Object id="opensource:URI-38f2db8f-41d6-4876-850b-5283e1987270">
+                            <cybox:Properties type="URL" xsi:type="URIObj:URIObjectType">
+                                <URIObj:Value condition="Equals">http://94.102.53.142/~zadmin/find/http.bin</URIObj:Value>
+                </cybox:Properties>
+            </cybox:Object>
+        </cybox:Observable>
+    </stix:Observables>
+</stix:STIX_Package>
+        </taxii_11:Content>
+        <taxii_11:Timestamp_Label>2016-02-22T15:24:02.970273Z</taxii_11:Timestamp_Label>
+    </taxii_11:Content_Block>
+    <taxii_11:Content_Block>
+        <taxii_11:Content_Binding binding_id="urn:stix.mitre.org:xml:1.1.1"/>
+        <taxii_11:Content>
+            <stix:STIX_Package id="edge:Package-aba08109-b0aa-4852-9e95-05463debcdc0" timestamp="2016-02-22T15:24:02.970755+00:00" version="1.1.1" xmlns:stixCommon="http://stix.mitre.org/common-1" xmlns:tlpMarking="http://data-marking.mitre.org/extensions/MarkingStructure#TLP-1" xmlns:simpleMarking="http://data-marking.mitre.org/extensions/MarkingStructure#Simple-1" xmlns:edge="http://soltra.com/" xmlns:stixVocabs="http://stix.mitre.org/default_vocabularies-1" xmlns:AddressObj="http://cybox.mitre.org/objects#AddressObject-2" xmlns:opensource="http://hailataxii.com" xmlns:cyboxVocabs="http://cybox.mitre.org/default_vocabularies-2" xmlns:taxii="http://taxii.mitre.org/messages/taxii_xml_binding-1" xmlns:TOUMarking="http://data-marking.mitre.org/extensions/MarkingStructure#Terms_Of_Use-1" xmlns:stix="http://stix.mitre.org/stix-1" xmlns:marking="http://data-marking.mitre.org/Marking-1" xmlns:tdq="http://taxii.mitre.org/query/taxii_default_query-1" xmlns:cyboxCommon="http://cybox.mitre.org/common-2" xmlns:cybox="http://cybox.mitre.org/cybox-2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <stix:STIX_Header>
+                    <stix:Handling>
+                        <marking:Marking>
+                            <marking:Controlled_Structure>../../../../descendant-or-self::node()</marking:Controlled_Structure>
+                            <marking:Marking_Structure color="WHITE" xsi:type="tlpMarking:TLPMarkingStructureType"/>
+                            <marking:Marking_Structure xsi:type="TOUMarking:TermsOfUseMarkingStructureType">
+                                <TOUMarking:Terms_Of_Use>zeustracker.abuse.ch | Abuse source[https://sslbl.abuse.ch/blacklist/] - As for all abuse.ch projects, the use of the SSL Blacklist is free for both commercial and non-commercial usage without any limitation. However, if you are a commercial vendor of security software/services and you want to integrate data from the SSL Blacklist into your products / services, you will have to ask for permission first by contacting me using the contact form [http://www.abuse.ch/?page_id=4727].'
+</TOUMarking:Terms_Of_Use>
+                </marking:Marking_Structure>
+                            <marking:Marking_Structure xsi:type="simpleMarking:SimpleMarkingStructureType">
+                                <simpleMarking:Statement>Unclassified (Public)</simpleMarking:Statement>
+                </marking:Marking_Structure>
+            </marking:Marking>
+        </stix:Handling>
+    </stix:STIX_Header>
+                <stix:Observables cybox_major_version="2" cybox_minor_version="1" cybox_update_version="0">
+                    <cybox:Observable id="opensource:Observable-2aa6d9ec-633a-4dbf-9410-64efce2422ff" sighting_count="1">
+                        <cybox:Title>IP: 94.102.53.142</cybox:Title>
+                        <cybox:Description>IPv4: 94.102.53.142 | isSource: True | </cybox:Description>
+                        <cybox:Object id="opensource:Address-cf5489ab-a097-46df-9ec9-91ab3bbcc477">
+                            <cybox:Properties category="ipv4-addr" is_source="true" xsi:type="AddressObj:AddressObjectType">
+                                <AddressObj:Address_Value condition="Equal">94.102.53.142</AddressObj:Address_Value>
+                </cybox:Properties>
+            </cybox:Object>
+        </cybox:Observable>
+    </stix:Observables>
+</stix:STIX_Package>
+        </taxii_11:Content>
+        <taxii_11:Timestamp_Label>2016-02-22T15:24:02.971398Z</taxii_11:Timestamp_Label>
+    </taxii_11:Content_Block>
+    <taxii_11:Content_Block>
+        <taxii_11:Content_Binding binding_id="urn:stix.mitre.org:xml:1.1.1"/>
+        <taxii_11:Content>
+            <stix:STIX_Package id="edge:Package-77c7b736-eb95-4055-8bae-61c5e2bc4310" timestamp="2016-02-22T15:24:02.971847+00:00" version="1.1.1" xmlns:stixCommon="http://stix.mitre.org/common-1" xmlns:tlpMarking="http://data-marking.mitre.org/extensions/MarkingStructure#TLP-1" xmlns:simpleMarking="http://data-marking.mitre.org/extensions/MarkingStructure#Simple-1" xmlns:edge="http://soltra.com/" xmlns:stixVocabs="http://stix.mitre.org/default_vocabularies-1" xmlns:opensource="http://hailataxii.com" xmlns:cyboxVocabs="http://cybox.mitre.org/default_vocabularies-2" xmlns:FileObj="http://cybox.mitre.org/objects#FileObject-2" xmlns:taxii="http://taxii.mitre.org/messages/taxii_xml_binding-1" xmlns:TOUMarking="http://data-marking.mitre.org/extensions/MarkingStructure#Terms_Of_Use-1" xmlns:stix="http://stix.mitre.org/stix-1" xmlns:marking="http://data-marking.mitre.org/Marking-1" xmlns:tdq="http://taxii.mitre.org/query/taxii_default_query-1" xmlns:cyboxCommon="http://cybox.mitre.org/common-2" xmlns:cybox="http://cybox.mitre.org/cybox-2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <stix:STIX_Header>
+                    <stix:Handling>
+                        <marking:Marking>
+                            <marking:Controlled_Structure>../../../../descendant-or-self::node()</marking:Controlled_Structure>
+                            <marking:Marking_Structure color="WHITE" xsi:type="tlpMarking:TLPMarkingStructureType"/>
+                            <marking:Marking_Structure xsi:type="TOUMarking:TermsOfUseMarkingStructureType">
+                                <TOUMarking:Terms_Of_Use>zeustracker.abuse.ch | Abuse source[https://sslbl.abuse.ch/blacklist/] - As for all abuse.ch projects, the use of the SSL Blacklist is free for both commercial and non-commercial usage without any limitation. However, if you are a commercial vendor of security software/services and you want to integrate data from the SSL Blacklist into your products / services, you will have to ask for permission first by contacting me using the contact form [http://www.abuse.ch/?page_id=4727].'
+</TOUMarking:Terms_Of_Use>
+                </marking:Marking_Structure>
+                            <marking:Marking_Structure xsi:type="simpleMarking:SimpleMarkingStructureType">
+                                <simpleMarking:Statement>Unclassified (Public)</simpleMarking:Statement>
+                </marking:Marking_Structure>
+            </marking:Marking>
+        </stix:Handling>
+    </stix:STIX_Header>
+                <stix:Observables cybox_major_version="2" cybox_minor_version="1" cybox_update_version="0">
+                    <cybox:Observable id="opensource:Observable-e49fe4fb-6aef-486d-be21-0ec8a371ddb1" sighting_count="1">
+                        <cybox:Title>File: http.bin</cybox:Title>
+                        <cybox:Description>FileName: http.bin | FileHash: c88a8635a7eed7ff6641868b697650db | </cybox:Description>
+                        <cybox:Object id="opensource:File-546da1e6-6c00-4c0b-90f3-d56d4aa7f855">
+                            <cybox:Properties xsi:type="FileObj:FileObjectType">
+                                <FileObj:File_Name>http.bin</FileObj:File_Name>
+                                <FileObj:File_Format>bin</FileObj:File_Format>
+                                <FileObj:Hashes>
+                                    <cyboxCommon:Hash>
+                                        <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">MD5</cyboxCommon:Type>
+                                        <cyboxCommon:Simple_Hash_Value condition="Equals">c88a8635a7eed7ff6641868b697650db</cyboxCommon:Simple_Hash_Value>
+                        </cyboxCommon:Hash>
+                    </FileObj:Hashes>
+                </cybox:Properties>
+            </cybox:Object>
+        </cybox:Observable>
+    </stix:Observables>
+</stix:STIX_Package>
+        </taxii_11:Content>
+        <taxii_11:Timestamp_Label>2016-02-22T15:24:03.278645Z</taxii_11:Timestamp_Label>
+    </taxii_11:Content_Block>
+</taxii_11:Poll_Response>
+
