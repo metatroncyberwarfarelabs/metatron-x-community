@@ -1,33 +1,16 @@
-<!--
-Licensed to the Apache Software Foundation (ASF) under one
-or more contributor license agreements.  See the NOTICE file
-distributed with this work for additional information
-regarding copyright ownership.  The ASF licenses this file
-to you under the Apache License, Version 2.0 (the
-"License"); you may not use this file except in compliance
-with the License.  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
--->
-Metatron on CentOS 6
+Metatron on CentOS
 ==================
 
-This project fully automates the provisioning and deployment of Metatron Labs and all necessary prerequisites on a single, virtualized host running CentOS 6.
+This project fully automates the provisioning and deployment of Metatron Cyberwarfare Labs and all necessary prerequisites on a single, virtualized host running CentOS.
 
-Metatron is composed of many components and installing all of these on a single host, especially a virtualized one, will greatly stress the resources of the host.   The host will require at least 8 GB of RAM and a fair amount of patience.  It is highly recommended that you shut down all unnecessary services.
+Metatron is composed of many components and installing all of these on a single host, especially a virtualized one, will greatly stress the resources of the host. The host will require at least 8 GB of RAM and a fair amount of patience. It is highly recommended that you shut down all unnecessary services.
 
 Getting Started
 ---------------
 
 ### Prerequisites
 
-The computer used to deploy Apache Metron will need to have the following components installed.
+The computer used to deploy Metatron Cyberwarfare Labs will need to have the following components installed.
 
  - [Ansible](https://github.com/ansible/ansible) 2.4.0+
  - [Docker](https://www.docker.com/community-edition)
@@ -60,11 +43,11 @@ Any platform that supports these tools is suitable, but the following instructio
     open /Applications/Docker.app
     ```
 
-### Deploy Metron
+### Deploy Metatron
 
 1. Ensure that the Docker service is running.
 
-1. Deploy Metron
+1. Deploy Metatron
 
     ```
     cd metatron-deployment/development/centos6
@@ -79,7 +62,7 @@ Any platform that supports these tools is suitable, but the following instructio
 
 ### Explore Metron
 
-Navigate to the following resources to explore your newly minted Apache Metron environment.
+Navigate to the following resources to explore your newly minted Metatron Cyberwarfare Labs environment.
 
 * [Metatron Alerts](http://node1:4201) credentials: user/password
 * [Ambari](http://node1:8080) credentials: admin/admin
@@ -89,9 +72,9 @@ Connecting to the host through SSH is as simple as running the following command
 vagrant ssh
 ```
 
-### Working with Metron
+### Working with Metatron Cyberwarfare Labs
 
-In addition to re-running the entire provisioning play book, you may now re-run an individual Ansible tag or a collection of tags in the following ways.  The following commands will re-run the `sensor-stubs` role on the Vagrant image. This will install and start the sensor stub components.
+In addition to re-running the entire provisioning play book, you may now re-run an individual Ansible tag or a collection of tags in the following ways. The following commands will re-run the `sensor-stubs` role on the Vagrant image. This will install and start the sensor stub components.
 
 ```
 vagrant --ansible-tags="sensor-stubs" provision
