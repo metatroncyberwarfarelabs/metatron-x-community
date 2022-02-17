@@ -2,6 +2,7 @@
 
 ![license](https://img.shields.io/github/license/metatroncyberwarfare/metatron-framework?style=for-the-badge) 
 ![license](https://img.shields.io/github/languages/count/metatroncyberwarfare/metatron-framework?style=for-the-badge)
+![license](https://img.shields.io/github/languages/top/metatroncyberwarfare/metatron-framework?style=for-the-badge)
 
 <img src="https://user-images.githubusercontent.com/98597119/154565609-62ad972a-881a-4887-a71f-5c8b311b4435.png" alt="metatron" style="max-width: 100%;">
 
